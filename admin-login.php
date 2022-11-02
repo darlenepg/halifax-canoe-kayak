@@ -8,7 +8,7 @@ session_start();
 		<title>Admin Login</title>
 		<link rel="stylesheet" href="assets/css/phpstyle.css">
 	</head>
-	<body>
+	<body style="background-color:#3f4f94">
 		
 			<div class="login">
 				<h1>Admin Login</h1>
