@@ -8,7 +8,83 @@
     <title>Halifax Canoe and Kayak</title>
     <link rel="stylesheet" href="assets/css/main.css">
     <style>
-        <?php include 'assets\css\phpstyle.css'; ?> 
+      .book-form {
+    max-width: 50%;
+    margin: 10px auto;
+    padding: 20px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+ 
+}
+
+.form-label{
+    color: #3f4f94;
+    font-size: 20px;
+    padding: 20px;
+    line-height: 2;
+    
+}
+
+.register-btn {
+   
+        padding: 19px 39px 18px 39px;
+        color: #FFF;
+        background-color: #3f4f94;
+        font-size: 18px;
+        text-align: center;
+        font-style: normal;
+        border-radius: 5px;
+        width: 100%;
+        border: 1px solid #3f4f94;
+        border-width: 1px 1px 3px;
+        box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+        margin-bottom: 10px;
+      }
+
+
+
+input[type=text], input[type=email], input[type=date], select{
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #3f4f94;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+}
+
+
+
+
+.options{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+}
+
+.ty-text {
+    max-width: 100%;
+    margin: 10px auto;
+    padding: 20px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 2;
+    color: #3f4f94;
+    font-weight:bold;
+}
+
+
+
     </style>
 </head>
 
