@@ -70,7 +70,7 @@
          echo '<h1>'. $heading . '</h1> <br/>';
          echo "<b> Date: </b>" . $tripDate .'<br/> <br/>';
          echo "<b>Duration: </b>" . $duration . ' days <br/> <br/>';
-         echo "<b>Summary </b><br/>" . $summary .'<br/> <br/>';
+         echo "<h2>Summary </h2><br/>" . $summary .'<br/> <br/>';
         
      }
  
