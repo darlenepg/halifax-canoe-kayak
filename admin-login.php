@@ -6,7 +6,7 @@ session_start();
 	<head>
 		<meta charset="utf-8">
 		<title>Admin Login</title>
-		<link rel="stylesheet" href="assets/css/phpstyle.css">
+		<link rel="stylesheet" href="assets/css/login.css">
 	</head>
 	<body style="background-color:#3f4f94">
 		
