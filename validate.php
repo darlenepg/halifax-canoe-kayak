@@ -13,7 +13,7 @@ if(isset($_POST['submit'])){
     if ($username != "" && $password != ""){
 
         $sql_query = "SELECT count(*) as cntUser FROM admin WHERE username='".$username."' and password='".$password."'";
-        $result = mysqli_query($conn,$sql_query);
+        $result = mysqli_query($con,$sql_query);
         $row = mysqli_fetch_array($result);
 
         $count = $row['cntUser'];
