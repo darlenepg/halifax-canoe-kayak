@@ -1,31 +1,18 @@
 
 
 <?php
-  
-$servername = "projectserver.mysql.database.azure.com";
-$username = "darn84";
-$password = "04Malachi19";
-$dbName = "sfhdb";
-  
-try {
-  
-    // Creating the connection
-    $con = new PDO("mysql:host=$servername;dbname=$dbName", 
-                    $username, $password);
-    
-    // Setting the PDO error mode to exception
-    $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connection established successfully...";
-    
-    // To close the connection
-    $con = null;
-} 
-  
-// If connection fails 
-catch(PDOException $e) {
-  
-      // Throws the error message 
-    echo "Connection failed: " . $e->getMessage();
+
+/* database connection */
+
+session_start();
+ 
+$host = "projectserver.mysql.database.azure.com"; /* Host name */
+$username = "darn84"; /* User */
+$password = "04Malachi19"; /* Password */
+$dbname = "sfhdb"; /* Database name */
+
+$con = mysqli_connect($host, $username, $password,$dbname);
+// Check connection
+if (!$con) {
+  die("Connection failed: " . mysqli_connect_error());
 }
-  
-?>
