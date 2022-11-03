@@ -1,11 +1,31 @@
 
+
 <?php
-session_start();
-
-
-$con = mysqli_init();
-mysqli_ssl_set($con,NULL,NULL, "DigiCertGlobalRootCA.crt.pem", NULL, NULL);
-mysqli_real_connect($conn, "projectserver.mysql.database.azure.com", "darn84", "04Malachi19", "sfhdb", 3306, MYSQLI_CLIENT_SSL);
- 
-
+  
+$servername = "projectserver.mysql.database.azure.com";
+$username = "darn84";
+$password = "04Malachi19";
+$dbName = "sfhdb";
+  
+try {
+  
+    // Creating the connection
+    $con = new PDO("mysql:host=$servername;dbname=$dbName", 
+                    $username, $password);
+    
+    // Setting the PDO error mode to exception
+    $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Connection established successfully...";
+    
+    // To close the connection
+    $con = null;
+} 
+  
+// If connection fails 
+catch(PDOException $e) {
+  
+      // Throws the error message 
+    echo "Connection failed: " . $e->getMessage();
+}
+  
 ?>
