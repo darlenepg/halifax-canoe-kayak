@@ -4,9 +4,9 @@
 
 session_start();
  
-$host = "localhost"; /* Host name */
-$username = "root"; /* User */
-$password = ""; /* Password */
+$host = "projectserver"; /* Host name */
+$username = "darn84"; /* User */
+$password = "04Malachi19"; /* Password */
 $dbname = "admin_login"; /* Database name */
 
 $con = mysqli_connect($host, $username, $password,$dbname);
