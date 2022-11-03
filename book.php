@@ -7,43 +7,40 @@
     <meta name="description" content="Skills for Hire project.">
     <title>Halifax Canoe and Kayak</title>
     <link rel="stylesheet" href="assets/css/main.css">
-    <style>
-          .book-form {
+    
+ <style>
+ .book-form {
     max-width: 50%;
     margin: 10px auto;
     padding: 20px 20px;
     background: #f4f7f8;
     border-radius: 8px;
- 
 }
 
 .form-label{
     color: #3f4f94;
     font-size: 20px;
     padding: 20px;
-    line-height: 2;
-    
+    line-height: 2;   
 }
 
 .register-btn {
    
-        padding: 19px 39px 18px 39px;
-        color: #FFF;
-        background-color: #3f4f94;
-        font-size: 18px;
-        text-align: center;
-        font-style: normal;
-        border-radius: 5px;
-        width: 100%;
-        border: 1px solid #3f4f94;
-        border-width: 1px 1px 3px;
-        box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
-        margin-bottom: 10px;
-      }
+     padding: 19px 39px 18px 39px;
+     color: #FFF;
+     background-color: #3f4f94;
+     font-size: 18px;
+     text-align: center;
+     font-style: normal;
+     border-radius: 5px;
+     width: 100%;
+     border: 1px solid #3f4f94;
+     border-width: 1px 1px 3px;
+     box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+     margin-bottom: 10px;
+}
 
-
-
-input[type=text], input[type=email], input[type=date], select{
+input[type=text], input[type=email], input[type=date], select {
     background: rgba(255,255,255,0.1);
     border: none;
     font-size: 16px;
@@ -57,9 +54,6 @@ input[type=text], input[type=email], input[type=date], select{
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     margin-bottom: 30px;
 }
-
-
-
 
 .options{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -82,11 +76,7 @@ input[type=text], input[type=email], input[type=date], select{
     color: #3f4f94;
     font-weight:bold;
 }
-
-
-
-
-    </style>
+</style>
 </head>
 
 <body>   
