@@ -7,6 +7,7 @@
     <meta name="description" content="Skills for Hire project.">
     <title>Halifax Canoe and Kayak</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" type="icon" href="assets/images/hal.png">
     <style>
         <?php include 'assets\css\phpstyle.css'; ?> 
     </style>
