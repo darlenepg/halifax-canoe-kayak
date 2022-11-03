@@ -1,7 +1,16 @@
 <?php
 
 /* database connection */
+
+session_start();
  
-$con = mysqli_init(); mysqli_ssl_set($con,NULL,NULL, "{path to CA cert}", NULL, NULL); 
-mysqli_real_connect($conn, "sfhserver", "darn84", "04Malachi19", "sfhdb", 3306, MYSQLI_CLIENT_SSL);
+$host = "projectserver.mysql.database.azure.com"; /* Host name */
+$username = "darn84"; /* User */
+$password = "04Malachi19"; /* Password */
+$dbname = "sfhdb"; /* Database name */
+
+$con = mysqli_connect($host, $username, $password,$dbname);
+// Check connection
+if (!$con) {
+  die("Connection failed: " . mysqli_connect_error());
 }
