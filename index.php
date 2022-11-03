@@ -59,12 +59,13 @@
  if ($result = $con->query($query)) {
  
      while ($row = $result->fetch_assoc()) {
+         $id = $row["id"];
          $heading = $row["heading"];
          $tripDate = $row["tripDate"];
          $duration = $row["duration"];
          $summary = $row["summary"];
      
- 
+          echo . $id . '<br/>';
          echo '<h1>'. $heading . '</h1> <br/>';
          echo "<b> Date: </b>" . $tripDate .'<br/> <br/>';
          echo "<b>Duration: </b>" . $duration . ' days <br/> <br/>';
