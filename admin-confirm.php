@@ -52,7 +52,7 @@
 
         <div>
         <?php
-            include_once 'adventure-conn.php';
+            include_once 'connection.php';
                 if(isset($_POST['save']))
                     {	 
                     $heading = $con->real_escape_string($_POST['heading']);
