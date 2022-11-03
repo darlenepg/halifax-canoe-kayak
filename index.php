@@ -51,7 +51,7 @@
 <div class="adventures-list"> 
 <?php
  
- include_once 'adventure-conn.php';
+ include_once 'connection.php';
 
  $query = "SELECT * FROM adventures";
  
